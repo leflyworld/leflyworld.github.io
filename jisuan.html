@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+    <style>
+        input{
+            float: left;
+        }
+    .op1{
+        float: left;
+    }
+    .op2{
+        float: left;
+    }
+    option{
+        float: left;
+        display:inline-block;
+    }
+    button{
+        float: left;
+    }
+    </style>
+	<body>
+		<input type="text" id="op1" placeholder="目标化合物实际浓度" />
+		<!-- <select > -->
+			<!-- <option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option> -->
+			<option value="/"id="op" >  </option>
+		<!-- </select> -->
+       
+		<input type="text" id="op2" placeholder="预测无效应浓度" /> <option value="/">  </option>
+		<input type="text" id="result" placeholder="水体风险熵" />
+		<input type="button" id="btn" value="计算" onClick="calc()" />
+		<!-- JS -->
+		<script type="text/javascript">
+			function calc(){
+				var num1 = document.getElementById("op1").value;
+				var num2 = document.getElementById("op2").value;
+				var operator = document.getElementById("op").value;
+				if (num1.trim()!=""&&num2.trim()!="") {
+						console.log(operator);
+					if(!isNaN(num1)&&!isNaN(num2)){
+						document.getElementById("result").value=eval(num1+operator+num2);
+					} else{
+						alert("请输入正确的数值");
+					}
+				} else{
+					alert("请输入两个操作数！");
+				}
+			}
+		</script>
+	</body>
+</html>

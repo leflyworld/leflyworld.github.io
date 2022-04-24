@@ -1,0 +1,143 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.zheng{
+   background-image: url(../环境大赛/千库网_绿色环保文明城市公益宣传banner_背景编号5930724.jpg);
+   /* width: 1263px; */
+   height: 730px;
+}
+.zheng span{
+   float: left;
+}
+.lo{
+   margin-top: 48px;
+   font-family: 华文隶书; 
+   font-size: 40px;
+}
+.logo{
+   float: left;
+   margin: 40px 0 0 40px;
+   width: 70px;
+   height: 50px;
+}
+.fir{
+   color: rgb(54, 138, 211);
+   float: left;
+   /* background-color: rgba(71, 159, 199, 0.4); */
+   text-align: center;
+   width: 140px;
+   height: 30px;
+   font-weight: 600;
+   line-height: 30px;
+   margin-top: 20px;
+   margin-left: 150px;
+}
+.far{
+   color: rgb(72, 156, 230);
+   float: left;
+   /* background-color: rgba(71, 159, 199, 0.4); */
+   text-align: center;
+   width: 140px;
+   height: 30px;
+   font-weight: 600;
+   line-height: 30px;
+   margin-top: 20px;
+   margin-left: 40px;
+}
+.fbr{
+   color: rgb(79, 158, 226);
+   float: left;
+   /* background-color: rgba(71, 159, 199, 0.4); */
+   text-align: center;
+   width: 180px;
+   height: 30px;
+   font-weight: 600;
+   line-height: 30px;
+   margin-top: 20px;
+   margin-left: 20px;
+}
+.fcr{
+   color: rgb(76, 150, 214);
+   float: left;
+   /* background-color: rgba(71, 159, 199, 0.4); */
+   text-align: center;
+   width: 160px;
+   height: 30px;
+   font-weight: 600;
+   line-height: 30px;
+   margin-top: 20px;
+   margin-left: 20px;
+}
+.biao{
+   float: right;
+   width: 700px;
+   height:130px ;
+   /* font-family:华文楷体; */
+   font-family: 华文隶书; 
+   font-size: 80px;
+   color: rgb(12, 187, 85);
+   font-weight: 1000;
+   margin-left: 888px;
+   margin-top: 120px;
+   margin-bottom: 60px;
+   font-style: italic;
+}
+.fdr{
+   float: right;
+   margin-top: 40px;
+   margin-right: 40px;
+}
+.fdr img{
+   float: right;
+   width: 50px;
+   height: 50px;
+   border-radius: 50px;
+}
+.fdr span{
+   float: right;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+.biao span{
+   float: right;}
+.ohg{
+   margin-right: 120px;
+}
+.an{
+   float: left;
+   height: 300px;
+   width: 1100px;
+   margin-left: 80px;
+   margin-bottom:30px;
+   background: rgba(255,255,255,.72);
+   border-radius: 20px;
+}
+
+.an li{
+   float: left;
+   width: 180px;
+   height: 280px;
+   margin: 0 0 0 140px;
+   list-style: none;
+   padding-top: 30px;
+}
+.shui{
+   width: 180px;
+   height: 180px;
+   float: left;
+}
+.an li a{
+   text-decoration: none;
+}
+.an li span{
+   float: left;
+   margin-left: 50px;
+   margin-top: 10px;
+   color: rgb(24, 163, 78);
+   font-size: larger;
+   font-weight: 600;
+}
+.an li a :hover{
+   color: orange;
+}
