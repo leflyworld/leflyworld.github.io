@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .le{ 
+             background-image: url(./千库网_绿色环保文明城市公益宣传banner_背景编号5930724.jpg);
+              /* width: 1200px;  */
+              height: 730px;
+              margin: 0;
+              border: 0;
+              padding: 100px 0 0 80px;
+            }
+           
+    .trfc_lts1{
+        display:inline-block;
+        margin-top: 3px;
+        width: 75px;
+        height: 23px;
+        padding:2px,0,0,3px;
+        /* float: left; */
+        border: 1px solid black;
+    }
+    .trfc_lts1 .light{
+        display:inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        border:3px solid black;
+    }
+    .trfc_lts1 #redLight{
+        background-color: red;
+        margin-left: 7px;
+    }
+    .trfc_lts1 #yellowLight{
+        background-color: yellow;
+        margin-left: 7px;
+    }
+    .trfc_lts1 #greenLight{
+        background-color: green;
+        margin-left: 7px;
+    }
+    </style>
+</head>
+<body>
+    <div class="le">
+    <input type="text"id="unvlevel"placeholder="请输入UV254的浓度">
+    <input type="text"id="unvresult">
+    <input type="button" id="btn" value="计算" onClick="un254()">
+    <div class="trfc_lts1">
+    <div id="redlight" class="light"></div>
+    <div id="yellowlight" class="light"></div>
+    <div id="greenlight" class="light"></div>
+</div>
+<br>
+    <input type="text"id="onelevel"placeholder="请输入F1的浓度">
+    <input type="text"id="oneresult">
+    <input type="button" value="计算" onClick="one()">
+    <div class="trfc_lts1">
+    <div id="redlight1" class="light"></div>
+    <div id="yellowlight1" class="light"></div>
+    <div id="greenlight1" class="light"></div>
+</div>
+<br>
+    <input type="text"id="twolevel"placeholder="请输入F2的浓度">
+    <input type="text"id="tworesult">
+    <input type="button" value="计算" onClick="two()">
+    <div class="trfc_lts1">
+    <div id="redlight2" class="light"></div>
+    <div id="yellowlight2" class="light"></div>
+    <div id="greenlight2" class="light"></div>
+</div>
+<br>
+    <input type="text"id="threelevel"placeholder="请输入F3的浓度">
+    <input type="text"id="threeresult">
+    <input type="button" value="计算" onClick="three()">
+    <div class="trfc_lts1">
+    <div id="redlight3" class="light"></div>
+    <div id="yellowlight3" class="light"></div>
+    <div id="greenlight3" class="light"></div>
+</div>
+<br>
+    <input type="text"id="fourlevel"placeholder="请输入F4的浓度">
+    <input type="text"id="fourresult">
+    <input type="button" value="计算" onClick="four()">
+    <div class="trfc_lts1">
+    <div id="redlight4" class="light"></div>
+    <div id="yellowlight4" class="light"></div>
+    <div id="greenlight4" class="light"></div>
+</div>
+<br>
+    <input type="text"id="fivelevel"placeholder="请输入F5的浓度">
+    <input type="text"id="fiveresult">
+    <input type="button" value="计算" onClick="five()">
+    <div class="trfc_lts1">
+    <div id="redlight5" class="light"></div>
+    <div id="yellowlight5" class="light"></div>
+    <div id="greenlight5" class="light"></div>
+</div>
+<br>
+    <input type="text"id="sixlevel"placeholder="请输入F6的浓度">
+    <input type="text"id="sixresult">
+    <input type="button" value="计算" onClick="six()">
+    <div class="trfc_lts1">
+    <div id="redlight6" class="light"></div>
+    <div id="yellowlight6" class="light"></div>
+    <div id="greenlight6" class="light"></div>
+</div>
+</div>
+
+    <script>
+        function un254(){
+            var num1 =parseFloat( document.getElementById("unvlevel").value);
+            var zhong=num1*477.51+13.972;
+			document.getElementById("unvresult").value=zhong;
+            let redlight = document.getElementById("redlight");
+            let yellowlight = document.getElementById("yellowlight");
+            let greenlight = document.getElementById("greenlight");
+             redlight.style.backgroundColor = "white";
+             yellowlight.style.backgroundColor = "white";
+             greenlight.style.backgroundColor = "white";
+            bianse();
+
+        function bianse(){
+            if(zhong>6.04){
+                redlight.style.backgroundColor="red"
+                yellowlight.style.backgroundColor = "white";
+               greenlight.style.backgroundColor = "white";   
+            }
+            else if(zhong>4.832)
+            {
+                redlight.style.backgroundColor = "white";
+               yellowlight.style.backgroundColor = "yellow";
+                greenlight.style.backgroundColor = "white"; 
+            }
+            else{
+                redlight.style.backgroundColor = "white";
+               yellowlight.style.backgroundColor = "white";
+               greenlight.style.backgroundColor = "green";
+            }
+                        }                }
+        function one(){
+            var num1 =parseFloat( document.getElementById("onelevel").value);
+            var zhong=num1*0.0012 - 19.835;
+			document.getElementById("oneresult").value=zhong;
+            let redlight1 = document.getElementById("redlight1");
+            let yellowlight1 = document.getElementById("yellowlight1");
+            let greenlight1 = document.getElementById("greenlight1");
+             redlight1.style.backgroundColor = "white";
+             yellowlight1.style.backgroundColor = "white";
+             greenlight1.style.backgroundColor = "white";
+            bianse();
+
+        function bianse(){
+              if(zhong>6.04){
+                redlight1.style.backgroundColor="red"
+                yellowlight1.style.backgroundColor = "white";
+               greenlight1.style.backgroundColor = "white";   
+                   
+            }
+            else if(zhong>4.832)
+            {
+                redlight1.style.backgroundColor = "white";
+               yellowlight1.style.backgroundColor = "yellow";
+                greenlight1.style.backgroundColor = "white"; 
+            }
+            else{
+                redlight1.style.backgroundColor = "white";
+               yellowlight1.style.backgroundColor = "white";
+               greenlight1.style.backgroundColor = "green";
+            }
+                        }                }
+        function two(){
+            var num1 =parseFloat( document.getElementById("twolevel").value);
+            var zhong= num1*0.0003 - 29.299;
+			document.getElementById("tworesult").value=zhong;
+            let redlight2= document.getElementById("redlight2");
+            let yellowlight2 = document.getElementById("yellowlight2");
+            let greenlight2 = document.getElementById("greenlight2");
+             redlight2.style.backgroundColor = "white";
+             yellowlight2.style.backgroundColor = "white";
+             greenlight2.style.backgroundColor = "white";
+            bianse();
+
+            function bianse(){
+            if(zhong>6.04){
+                redlight2.style.backgroundColor="red"
+                yellowlight2.style.backgroundColor = "white";
+               greenlight2.style.backgroundColor = "white";   
+                   
+            }
+            else if(zhong>4.832)
+            {
+                redlight2.style.backgroundColor = "white";
+               yellowlight2.style.backgroundColor = "yellow";
+                greenlight2.style.backgroundColor = "white"; 
+            }
+            else{
+                redlight2.style.backgroundColor = "white";
+               yellowlight2.style.backgroundColor = "white";
+               greenlight2.style.backgroundColor = "green";
+            }
+                        }                }
+        function three(){
+            var num1 =parseFloat( document.getElementById("threelevel").value);
+            var zhong=num1*0.0002 - 21.907;
+			document.getElementById("threeresult").value=zhong;
+            let redlight3 = document.getElementById("redlight3");
+            let yellowlight3 = document.getElementById("yellowlight3");
+            let greenlight3 = document.getElementById("greenlight3");
+             redlight3.style.backgroundColor = "white";
+             yellowlight3.style.backgroundColor = "white";
+             greenlight3.style.backgroundColor = "white";
+            bianse();
+
+        function bianse(){
+            if(zhong>6.04){
+                redlight3.style.backgroundColor="red"
+                yellowlight3.style.backgroundColor = "white";
+                greenlight3.style.backgroundColor = "white";   
+            }
+            else if(zhong>4.832)
+            {
+                redlight3.style.backgroundColor = "white";
+               yellowlight3.style.backgroundColor = "yellow";
+                greenlight3.style.backgroundColor = "white"; 
+            }
+            else{
+                redlight3.style.backgroundColor = "white";
+               yellowlight3.style.backgroundColor = "white";
+               greenlight3.style.backgroundColor = "green";
+            }
+                        }                }
+        function four(){
+            var num1 =parseFloat( document.getElementById("fourlevel").value);
+            var zhong=num1*0.0001 - 6.8512;
+			document.getElementById("fourresult").value=zhong;
+            let redlight4 = document.getElementById("redlight4");
+            let yellowlight4 = document.getElementById("yellowlight4");
+            let greenlight4 = document.getElementById("greenlight4");
+             redlight4.style.backgroundColor = "white";
+             yellowlight4.style.backgroundColor = "white";
+             greenlight4.style.backgroundColor = "white";
+            bianse();
+            function bianse(){
+            if(zhong>6.04){
+                redlight4.style.backgroundColor="red"
+                yellowlight4.style.backgroundColor = "white";
+               greenlight4.style.backgroundColor = "white";   
+                   
+            }
+            else if(zhong>4.832)
+            {
+                redlight4.style.backgroundColor = "white";
+               yellowlight4.style.backgroundColor = "yellow";
+                greenlight4.style.backgroundColor = "white"; 
+            }
+            else{
+                redlight4.style.backgroundColor = "white";
+               yellowlight4.style.backgroundColor = "white";
+               greenlight4.style.backgroundColor = "green";
+            }
+                        }                }
+        function five(){
+            var num1 =parseFloat( document.getElementById("fivelevel").value);
+            var zhong=num1*477.51+13.972;
+			document.getElementById("fiveresult").value=zhong;
+            let redlight5 = document.getElementById("redlight5");
+            let yellowlight5 = document.getElementById("yellowlight5");
+            let greenlight5 = document.getElementById("greenlight5");
+             redlight5.style.backgroundColor = "white";
+             yellowlight5.style.backgroundColor = "white";
+             greenlight5.style.backgroundColor = "white";
+            bianse();
+
+            function bianse(){
+            if(zhong>6.04){
+                redlight5.style.backgroundColor="red"
+                yellowlight5.style.backgroundColor = "white";
+               greenlight5.style.backgroundColor = "white";   
+                   
+            }
+            else if(zhong>4.832)
+            {
+                redlight5.style.backgroundColor = "white";
+               yellowlight5.style.backgroundColor = "yellow";
+                greenlight5.style.backgroundColor = "white"; 
+            }
+            else{
+                redlight5.style.backgroundColor = "white";
+               yellowlight5.style.backgroundColor = "white";
+               greenlight5.style.backgroundColor = "green";
+            }
+                        }                }
+        function six(){
+            var num1 =parseFloat( document.getElementById("sixlevel").value);
+            var zhong=num1*477.51+13.972;
+			document.getElementById("sixresult").value=zhong;
+            let redlight6 = document.getElementById("redlight6");
+            let yellowlight6 = document.getElementById("yellowlight6");
+            let greenlight6 = document.getElementById("greenlight6");
+             redlight6.style.backgroundColor = "white";
+             yellowlight6.style.backgroundColor = "white";
+             greenlight6.style.backgroundColor = "white";
+            bianse();
+            function bianse(){
+            if(zhong>6.04){
+                redlight6.style.backgroundColor="red"
+                yellowlight6.style.backgroundColor = "white";
+               greenlight6.style.backgroundColor = "white";   
+                   
+            }
+            else if(zhong>4.832)
+            {
+                redlight6.style.backgroundColor = "white";
+               yellowlight6.style.backgroundColor = "yellow";
+                greenlight6.style.backgroundColor = "white"; 
+            }
+            else{
+                redlight6.style.backgroundColor = "white";
+               yellowlight6.style.backgroundColor = "white";
+               greenlight6.style.backgroundColor = "green";
+            }
+                        }                }
+    </script>
+</body>
+</html>

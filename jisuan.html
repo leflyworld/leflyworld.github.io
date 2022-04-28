@@ -14,9 +14,10 @@
     .op2{
         float: left;
     }
-    option{
-        float: left;
-        display:inline-block;
+    option{ 
+		display:inline-block;
+        float:left;
+       
     }
     button{
         float: left;
@@ -31,17 +32,18 @@
 			<option value="/"id="op" >  </option>
 		<!-- </select> -->
        
-		<input type="text" id="op2" placeholder="预测无效应浓度" /> <option value="/">  </option>
+		<input type="text" id="op2" placeholder="预测无效应浓度" /> 
+		<option value="/">  </option>
 		<input type="text" id="result" placeholder="水体风险熵" />
 		<input type="button" id="btn" value="计算" onClick="calc()" />
 		<!-- JS -->
-		<script type="text/javascript">
+		<script >
 			function calc(){
 				var num1 = document.getElementById("op1").value;
 				var num2 = document.getElementById("op2").value;
 				var operator = document.getElementById("op").value;
 				if (num1.trim()!=""&&num2.trim()!="") {
-						console.log(operator);
+						// console.log(operator);
 					if(!isNaN(num1)&&!isNaN(num2)){
 						document.getElementById("result").value=eval(num1+operator+num2);
 					} else{
